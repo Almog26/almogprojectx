@@ -1,0 +1,9 @@
+.toggle {
+  transition: all 0.3s ease-in-out;
+}
+.toggle.dark {
+  transform: rotate(180deg);
+}
+.toggle.light {
+  transform: rotate(0deg);
+}/*# sourceMappingURL=DarkModeToggle.module.css.map */

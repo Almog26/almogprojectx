@@ -1,0 +1,38 @@
+.site-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .navbar-toggler {
+    display: none; // Initially hidden
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media (max-width: 650px) {
+    .navbar-toggler {
+      display: block; // Show the hamburger menu button
+    }
+
+    .nav-content {
+      display: none; // Hide the nav content
+      width: 100%;
+    }
+
+    .nav-content.open {
+      display: flex; // Show nav content when the menu is open
+    }
+  }
+}
